@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Donation</title>
+</head>
+
+<body>
+  <div class="container center-block text-center">
+    <p id="myparagraph"></p>
+  </div>
+
+  <div class="cont center-block">
+
+ 
+    <progress class="progress" max="1000" value="0"></progress>
+    <div class="text">
+      <h3><span class="color">only 3 days left</span> to fund this project.</h3>
+      <h3>Join 42 other donors who have<br>
+      already supported this project. Every<br>
+      dollar helps.</h3><br>
+    </div>
+    <div class="text-center">
+      <div class="col-xs-2">
+        <input class="form-control" id="txt" type="text" value='50'>
+      </div><button class="btn btn-success" onclick="myFunction()" type="button">Give now</button>
+    </div>
+    <p><a href="#">why give $50?</a></p><br>
+  </div>
+
+  <div class="links text-center">
+    <button type="button" class="btn btn-default share btn-lg" data-toggle="modal" data-target="#mymodal">
+      Save for later
+    </button>
+    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="mymodalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="mymodalLabel">Congragulations</h4>
+          </div>
+          <div class="modal-body">
+            saved
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-default share" data-target=".bs-example-modal-sm" data-toggle="modal" type="button">Tell your friends</button>
+    <div aria-labelledby="mySmallModalLabel" class="modal fade bs-example-modal-sm" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div id="share-buttons">
+           <a href="//www.facebook.com/sharer.php?u=//www.google.co.in/" target="_blank">
+            <img src="//www.facebookbrand.com/img/fb-art.jpg" alt="Facebook" />
+          </a>
+     
+           <a href="//twitter.com/share?hashtags=Yay! I donated" target="_blank">
+            <img src="//www.seeklogo.net/wp-content/uploads/2014/12/twitter-logo-vector-download.jpg" alt="Twitter" />
+           </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Congragulations</h4>
+      </div>
+      <div class="modal-body">
+        project completed.
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script> 
+  <script src="scripts/script.js" type="text/javascript">
+  </script>
+  
+</body>
+</html>
